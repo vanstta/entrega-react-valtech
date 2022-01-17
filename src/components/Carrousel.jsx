@@ -9,32 +9,26 @@ import img3b from '../images/image-product-3-thumbnail.jpg'
 import img4 from '../images/image-product-4.jpg'
 import img4b from '../images/image-product-4-thumbnail.jpg'
 
-
-
 const Carrousel = () => {
-
-    
     return (
         <SRLWrapper>
-    <img className="producto1" src={img1} alt="" />
-    
-    <div className="carrousel-contenedor">
-        <a  href={img1}>
-            <img className="carrousel-img" src={img1b} alt="" />
-        </a>
-        <a href={img2}>
-          <img className="carrousel-img" src={img2b} alt="" />
-        </a>
-        <a href={img3}>
-          <img className="carrousel-img" src={img3b} alt="" />
-        </a>
-        <a href={img4}>
-          <img className="carrousel-img" src={img4b} alt="" />
-        </a>
-    </div>
-
+          <img className='producto1' src={img1} alt="" />
+          <div className='carrousel-contenedor'>
+            <a  href={img1}>
+              <img className='carrousel-img' src={img1b} alt='foto del producto' />
+            </a>
+            <a href={img2}>
+              <img className='carrousel-img' src={img2b} alt='foto del producto' />
+            </a>
+            <a href={img3}>
+              <img className='carrousel-img' src={img3b} alt='foto del producto' />
+            </a>
+            <a href={img4}>
+              <img className='carrousel-img' src={img4b} alt='foto del producto' />
+            </a>
+          </div>
       </SRLWrapper>
-    )
+  )
 }
 
 export default Carrousel

@@ -1,4 +1,3 @@
-
 import React, {useState}from 'react'
 import {Link, NavLink} from 'react-router-dom'
 import logo from '../images/logo.svg'
@@ -17,51 +16,44 @@ const [menu, setMenu] = useState(false)
 
 const botonCarrito = () => {
     setIsOpen(!isOpen)
-    
 }
 
 const menuMobile = () => {
     setMenu(!menu)
-   
 }
 
     return (
         <div className='header'>
              <img className='menu-nav' onClick={()=> menuMobile()} src={menuLogo} alt="" />
              {
-                   menu &&
-                    ( <><MenuMobile/> 
-                    <div className='cerrar-menu'> <img onClick={()=> menuMobile()} className='cruz' src={cruz} alt="" /></div>
-                   </>)
-               }
+                menu &&
+                    ( 
+                    <>
+                        <MenuMobile/> 
+                        <div className='cerrar-menu'> <img onClick={()=> menuMobile()} className='cruz' src={cruz} alt="" /></div>
+                    </>
+                    )
+            }
             <div className='menu'>
-            <Link className='logo' to='/'><img src={logo} alt="logo de la marca" /></Link>
-           
-            <div className='lista'>
-               
-                <NavLink className='nav-link' to='/collections'>Collections</NavLink>     
-              
-                <NavLink className='nav-link' to='/men' exact>Men</NavLink>
-
-                <NavLink className='nav-link' to='/women' exact>Women</NavLink>
-              
-                <NavLink className='nav-link' to='/about' exact>About</NavLink>
-
-                <NavLink className='nav-link' to='contact' exact>Contact</NavLink>
-               
-            </div>
+                <Link className='logo' to='/'><img src={logo} alt='logo de la marca' /></Link>
+                <div className='lista'>
+                    <NavLink className='nav-link' to='/collections'>Collections</NavLink>     
+                    <NavLink className='nav-link' to='/men' exact>Men</NavLink>
+                    <NavLink className='nav-link' to='/women' exact>Women</NavLink>
+                    <NavLink className='nav-link' to='/about' exact>About</NavLink>
+                    <NavLink className='nav-link' to='contact' exact>Contact</NavLink>
+                </div>
             </div>
             <div className='carrito'>
                {
                    isOpen &&
-                    ( <Carrito/>)
+                    ( 
+                    <Carrito/>
+                    )
                }
                <ContadorCarrito/>
                 <button className='btn-carito' onClick={()=> botonCarrito()}> <img className='icono-carrito' src={carrito} alt="carrito" /></button>
-        
-               
                 <img className='perfil' src={perfil} alt="foto perfil usuario" />
-               
             </div>
         </div>
     )

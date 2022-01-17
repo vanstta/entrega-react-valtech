@@ -1,7 +1,6 @@
 import {TYPES} from "../service/shoppingActions";
 
 export const carritoInicial ={
- 
 productosAgregados: []
 }
 
@@ -14,8 +13,6 @@ export function shoppingReducer(state=carritoInicial, action) {
         case TYPES.ELIMINAR_DEL_CARRITO : {
             return {...state, productosAgregados: action.payload}
         }
-     
-        
         default:
             return state;
     }
@@ -31,7 +28,6 @@ export function shoppingReducer(state=carritoInicial, action) {
         } catch(error) {
             console.log(error)
         }
-        
     }
 
     export const eliminarDelCarrito = () => async(dispatch) => {

@@ -6,6 +6,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* mismo tipo de color */
+
 /* HEADER */
 
 .header {
@@ -22,8 +24,8 @@ body {
   margin-left: 15%;
   margin-top: 25px;
 }
+
 .menu {
- 
   display: flex;
 }
 
@@ -32,7 +34,7 @@ body {
 }
 
 .logo {
-  margin-top:10px;
+  margin-top:15px;
   margin-left: 5px;
   margin-right: 40px;
 }
@@ -44,17 +46,17 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: rgb(133, 133, 133);
+  color: #929292;
   margin-left: 15px;
   font-weight: 600;
 }
 
 .nav-link.active {
-  color: rgb(80, 79, 79);
+  color: #504f4f;
 }
 
 .nav-link:hover {
-  color: rgb(80, 79, 79);
+  color: #ff7e1b;
 }
 
 .carrito {
@@ -64,14 +66,13 @@ body {
 
 .perfil{
   width: 50px;
- 
+  cursor: pointer;
 }
 
 .icono-carrito {
-  margin-top:15px;
+  margin:10px 30px 0 0;
   width: 20px;
   height: 20px;
-  margin-right: 30px;
 }
 
 /* DETALLE PRODUCTO */
@@ -83,10 +84,9 @@ body {
 
 .contenedor-detalle {
   align-items: center;
-  margin-top: 80px;
+  margin: 80px 0 0 15%;
   display: flex;
   width: 70%;
-  margin-left: 15%;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -103,15 +103,14 @@ body {
 
 .item-precio {
   text-decoration: line-through;
-  color: rgb(129, 129, 129);
+  color: #929292;
   font-size: 12px;
   font-weight: 900;
-  margin-bottom: 30px;
-  margin-top: 10px;
+  margin: 10 px 0 30px 0;
 }
 
 .marca {
-  color: #FF7E1B;
+  color: #ff7e1b;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bolder;
@@ -121,7 +120,7 @@ body {
   background-color:#fadec8 ;
   padding: 3px 5px 3px 5px;
   font-size: 14px;
-  color: #FF7E1B;
+  color: #ff7e1b;
   font-weight: 900;
   border-radius: 3px;
   position: relative;
@@ -130,7 +129,6 @@ body {
 }
 
 .precios {
-  
   align-items: center;
 }
 
@@ -146,7 +144,7 @@ body {
 }
 
 .descripcion {
-  color: rgb(151, 151, 151);
+  color: #929292;
   font-size: 12px;
   font-weight: 700;
   width: 90%;
@@ -161,14 +159,12 @@ CONTADOR ITEMS */
 }
 
 .btn-contador {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  
+  margin: 20px 0 20px 0;
 }
 
 .botones-contador {
   display: flex;
-  background-color: rgb(235, 235, 235);
+  background-color: #d1d1d1;
   width: 125px;
   justify-content: center;
   border-radius: 8px;
@@ -180,14 +176,13 @@ CONTADOR ITEMS */
 .dec {
   margin-right: 15px;
   border: none;
-  
- 
+  background-color: #d1d1d1;
 }
 
 .inc {
   margin-left: 15px;
   border: none;
-  
+  background-color: #d1d1d1;
 }
 
 .agregar {
@@ -196,7 +191,7 @@ CONTADOR ITEMS */
   width: 200px;
   border-radius: 10px;
   border: none;
-  background-color: #FF7E1B;
+  background-color: #ff7e1b;
   color: white;
   font-weight: 600;
 }
@@ -204,7 +199,6 @@ CONTADOR ITEMS */
 .carrito-agregar {
   width: 15px;
   margin-right: 10px;
-  
 }
 
 .cantidad {
@@ -215,7 +209,6 @@ CONTADOR ITEMS */
   cursor: pointer;
 }
 
-
 /* CARRITO */
 
 .carrito-contenedor {
@@ -224,33 +217,32 @@ CONTADOR ITEMS */
   position: absolute;
   right: 15%;
   margin-top: 60px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 8px;
-  box-shadow:0 8px 20px 0 rgba(200, 200, 200, 0.7) ;
-  -moz-box-shadow:0 8px 20px 0 rgba(200, 200, 200, 0.7) ;
-  -webkit-box-shadow:0 8px 20px 0 rgba(200, 200, 200, 0.7) ;
-  -khtml-box-shadow:0 8px 20px 0 rgba(200, 200, 200, 0.7) ;
+  box-shadow:0 8px 20px 0 #bbbbbbd2 ;
+  -moz-box-shadow:0 8px 20px 0 #bbbbbbd2 ;
+  -webkit-box-shadow:0 8px 20px 0 #bbbbbbd2 ;
+  -khtml-box-shadow:0 8px 20px 0 #bbbbbbd2 ;
   z-index: 2;
 }
 
 .carrito-contenedor h3 {
   font-size: 14px;
   margin-left: 22px;
+  margin: 10px;
+  font-weight: bolder;
 }
 
 .img-carrito {
   width: 38px;
   height: 38px;
   border-radius: 5px;
-  margin-top: 9px;
   margin-right: 50px;
 }
 
 .contenedor-productos {
   display: flex; 
-  padding-left: 18px;
-  padding-right: 18px;
-
+  padding: 0 18px 0 18px;
 }
 
 .btn-carito {
@@ -264,13 +256,12 @@ CONTADOR ITEMS */
 .contenedor-productos p, .contenedor-productos span {
   position: relative;
   right: 35px;
-  
 }
 
 .producto-en-carrito, .precio {
   font-size: 10px;
   font-weight: 700;
-  color: rgb(126, 123, 123);
+  color: #969292;
 }
 
 .contenedor-productos span {
@@ -280,7 +271,7 @@ CONTADOR ITEMS */
 .carrito-vacio {
   font-size: 12px;
   font-weight: 700;
-  color: grey;
+  color: #504f4f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,22 +283,20 @@ CONTADOR ITEMS */
 
 .total-precio {
   font-weight: 900;
-  color: black;
+  color: #000000;
 }
 
 .datos-productos {
   line-height: 10px;
-
 }
 
 .checkout {
-  
   height: 45px;
   width: 230px;
   margin-top: 20px;
   border-radius: 10px;
   border: none;
-  background-color: #FF7E1B;
+  background-color: #ff7e1b;
   color: white;
   font-weight: 600;
   position: absolute;
@@ -315,8 +304,7 @@ CONTADOR ITEMS */
 }
 
 .btn-contenedor {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px 0 20px;
   display: flex;
   justify-content: center;
 }
@@ -338,28 +326,26 @@ CONTADOR ITEMS */
   top: 14px;
   height: 15px;
   width: 20px;
-  color: white;
+  color: #ffffff;
   font-size: 9px;
   border-radius: 15px;
   display: flex;
   justify-content: center;
-  
 }
 
-hr {
-  border: 1px solid rgb(218, 218, 218);
-  
+.hr-carrito {
+  border: 0.9px solid #d1d1d1;
 }
 
 /* CARROUSEL */
 
  .carrousel-img {
-   margin-top: 20px;
+   margin: 20px calc(80px/3) 0 0;
   border-radius: 12px;
   width: 80px;
   height: 80px;
-  margin-right: calc(80px/3);
 }
+
 .carrousel-mobile {
   display: none;
 }
@@ -378,36 +364,40 @@ hr {
   display: flex;
   width: 20px;
   height: 20px;
-  margin-top: 18px;
+  margin: 18px 0 15px 0;
   z-index: 1;
-  margin-left: 15px;
 }
 
 .cruz{
-  
   width: 25px;
   height: 25px;
   margin-top: 5px;
 }
+
 .cerrar-menu {
  z-index: 3;
  width: 100px;
  height: 70px;
- background-color: white;
+ background-color: #ffffff;
  display: flex;
  justify-content: center;
  position: absolute;
- left: 5%;
+ left: 4%;
  top: 4%;
 }
 
 .logo {
-  margin-left: 10px;
+  margin: 5px 0 10px 0;
+  
+}
+
+.icono-carrito {
+  margin-top: 10px;
 }
 
 .lista-menu {
   height: 100vh;
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -420,8 +410,7 @@ hr {
 .header{
   width: 100%;
   justify-content: space-between;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding: 0 45px 0 45px;
   margin-left: 0;
 }
 
@@ -430,12 +419,12 @@ hr {
   font-weight: bolder;
   line-height: 3;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #000000;
   margin-left: 40px;
 }
 
 .nav-menu.active {
-  color: rgb(80, 79, 79);
+  color: #504f4f;
 }
 
 .hr-nav {
@@ -454,12 +443,15 @@ hr {
 .contenedor-detalle {
   width: 100%;
   margin-left: 0;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding: 0 45px 0 45px;
+}
+
+.nombre-producto {
+  font-size: 25px
 }
 
 .precio-con-descuento {
-  font-size: 30px
+  font-size: 25px
 }
 
 .descuento {
@@ -467,9 +459,8 @@ hr {
 }
 
 .item-precio {
-  font-size: 25px;
+  font-size: 20px;
   position: relative;
-  bottom: 8px;
 }
 
 .precios-mb {
@@ -487,7 +478,6 @@ hr {
 .btn {
   display: flex;
   flex-direction: column;
- 
 }
 
 .botones-contador {
@@ -495,12 +485,12 @@ hr {
   margin-bottom: 20px;
   justify-content: space-around;
   height: 60px;
+  background-color: #d1d1d1;
 }
 
 .agregar {
   width: 100%;
-  margin-left: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
   height: 60px;
   font-size: 20px;
 }
@@ -520,7 +510,7 @@ hr {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #ffffff;
   background-size: initial;
 }
 
